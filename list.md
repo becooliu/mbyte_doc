@@ -14,18 +14,26 @@
 >`更新submodule 需要哪些就更新哪些`
 + `git submodule update --init access_protection/ affiliation/ coupon_site_engine/ text_generation/`
 
+>`先执行setuptools 升级，再执行后面的操作`
++ `pip install --upgrade setuptools`
+
 >`安装相关插件，依次执行三个安装`
 ```
 pip install -r text_generation/requirements.txt
 pip install -r coupon_site_engine/requirements.txt
 pip install -r affiliation/requirements.txt
 ```
+>`执行affiliation 升级`
++ `pip install --upgrade affiliation`
 
 > `启动时报错找不到module lxml (' no module named lxml ')`
 `pip install lxml`
 
 > `错误1054`
 + `获取服务器上最新的文件。分别cd到affiliation  text_generation  coupon_site_engine ，执行 git pull origin master`
+
+> `cannot import django`
++ `先执行setuptools 升级，再手动执行上面coupon_site_engine 等三个安装`
 
 + 项目跑起来后
    + 进入项目根目录下的项目文件夹（如bonsplans）

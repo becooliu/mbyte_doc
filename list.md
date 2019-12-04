@@ -51,4 +51,10 @@ pip install -r affiliation/requirements.txt
 > `DoesNotExist at /search`
 + 将a.patch 文件复制到coupon_site_engine 目录下，然后执行`git apply a.patch`
 
+> 端口占用查询
++ `ps aux | grep -i manag`
+
+> kill被占用的端口
++ `kill -9 xxxxx`
+
 
